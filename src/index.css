@@ -24,11 +24,17 @@
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  background: linear-gradient(135deg, var(--color-cream) 0%, #f7ede2 100%);
+  background-attachment: fixed;
+  color: var(--text-main);
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 #root {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
