@@ -1,5 +1,7 @@
 import "./App.css";
 
+import catLogo from "./assets/logo.png";
+
 import { useState } from "react";
 import type { CatFact } from "./types";
 
@@ -23,6 +25,8 @@ function App() {
 
   return (
     <div className="app-div">
+      <img src={catLogo} className="logo" alt="Cute cat logo" />
+
       <h1>Daily Cat Facts</h1>
 
       <div className="fact-card">
