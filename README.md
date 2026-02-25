@@ -73,4 +73,3 @@ Developed by Ana Sappia Rey:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ana-sappia-rey/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anuska86)
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://cat-fact-six.vercel.app/)
-![Vercel Deployment](https://img.shields.io/vercel/deploy/anuska86/cat-fact?label=Deployment&style=for-the-badge)
