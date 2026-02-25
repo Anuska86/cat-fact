@@ -50,6 +50,14 @@ function App() {
     }
   };
 
+  //Restart button
+
+  const restartApp = () => {
+    setCatData(null);
+    setIsLoading(false);
+    toast("App reset!", { icon: "🔄" });
+  };
+
   return (
     <div className="app-div">
       <img src={catLogo} className="logo" alt="Cute cat logo" />
@@ -60,6 +68,12 @@ function App() {
         <button onClick={fetchFact} disabled={isLoading}>
           {isLoading ? "Fetching a new cat fact..." : "Get a new cat fact"}
         </button>
+
+        {(catData || isLoading) && (
+          <button className="restart-btn" onClick={restartApp}>
+            Clear
+          </button>
+        )}
 
         {catData ? (
           <p className="fact-text">{catData.fact}</p>

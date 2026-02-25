@@ -61,7 +61,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-bottom: 1.5rem;
+  margin: 10px 5px;
 }
 
 button:hover {
@@ -87,6 +87,19 @@ button:active {
 
 .copy-btn:hover {
   background-color: #a83a3a;
+}
+
+/*Restart button*/
+.restart-button {
+  background-color: transparent;
+  color: var(--text-main);
+  border: 2px solid var(--color-sand);
+  box-shadow: none;
+}
+
+.restart-button:hover {
+  background-color: var(--color-sand);
+  color: var(--color-terracotta);
 }
 
 /*Logo*/
