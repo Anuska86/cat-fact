@@ -90,14 +90,14 @@ button:active {
 }
 
 /*Restart button*/
-.restart-button {
+.restart-btn {
   background-color: transparent;
   color: var(--text-main);
   border: 2px solid var(--color-sand);
   box-shadow: none;
 }
 
-.restart-button:hover {
+.restart-btn:hover {
   background-color: var(--color-sand);
   color: var(--color-terracotta);
 }

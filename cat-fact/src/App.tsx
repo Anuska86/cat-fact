@@ -21,6 +21,7 @@ function App() {
       setCatData(data);
     } catch (error) {
       console.error("Error fetching the cat fact:", error);
+      toast.error("Failed to fetch a cat fact! Maybe the cat is sleeping!");
     } finally {
       setIsLoading(false);
     }
