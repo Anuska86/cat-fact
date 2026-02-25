@@ -29,7 +29,8 @@ function App() {
         <button onClick={fetchFact} disabled={isLoading}>
           {isLoading ? "Fetching a new cat fact..." : "Get a new cat fact"}
         </button>
-        {catData && isLoading ? (
+
+        {catData ? (
           <p className="fact-text">{catData.fact}</p>
         ) : (
           <p>
