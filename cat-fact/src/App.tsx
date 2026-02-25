@@ -84,9 +84,12 @@ function App() {
               : "Click the button to get a cat fact!"}
           </p>
         )}
-        <button className="copy-btn" onClick={copyToClipboard}>
-          📋 Copy
-        </button>
+
+        {catData && (
+          <button className="copy-btn" onClick={copyToClipboard}>
+            📋 Copy
+          </button>
+        )}
       </div>
     </div>
   );
