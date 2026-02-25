@@ -4,6 +4,12 @@
 
 A vibrant, type-safe React application that delivers random cat facts using the CatFact Ninja API. Built with a focus on clean UI/UX and modern React patterns.
 
+📸 Preview
+
+|                         Home Screen                          |                         Active Fact                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| ![Home Screen](./src/assets/screenshots/main-screenshot.png) | ![Fact Screen](./src/assets/screenshots/fact-screenshot.png) |
+
 ✨ Features:
 
 - Real-time Fetching: Pulls random facts from the `catfact.ninja` API.
@@ -31,7 +37,7 @@ A vibrant, type-safe React application that delivers random cat facts using the 
 1.  Clone the repository:
 
     ```bash
-    git clone [https://github.com/your-username/cat-fact.git](https://github.com/your-username/cat-fact.git)
+    git clone [https://github.com/Anuska86/cat-fact.git](https://github.com/Anuska86/cat-fact.git)
     ```
 
 2.  Navigate to the project folder:
@@ -66,4 +72,5 @@ Developed by Ana Sappia Rey:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ana-sappia-rey/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anuska86)
-[![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)](https://spirits-node.onrender.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://cat-fact-six.vercel.app/)
+![Vercel Deployment](https://img.shields.io/vercel/deploy/Anuska86/cat-fact?label=Deployment&style=for-the-badge)
