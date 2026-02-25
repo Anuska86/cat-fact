@@ -9,6 +9,8 @@ function App() {
   const [catData, setCatData] = useState<CatFact | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
+  //Data fetch
+
   const fetchFact = async () => {
     setIsLoading(true);
 
@@ -20,6 +22,19 @@ function App() {
       console.error("Error fetching the cat fact:", error);
     } finally {
       setIsLoading(false);
+    }
+  };
+
+  //Copy Clipbboard
+
+  const copyToClipboard = async () => {
+    if (catData?.fact) {
+      try {
+        await navigator.clipboard.writeText(catData.fact);
+        alert("Fact copied to clipboard!");
+      } catch (error) {
+        console.error("Failed to copy the fact!:", error);
+      }
     }
   };
 
@@ -43,6 +58,7 @@ function App() {
               : "Click the button to get a cat fact!"}
           </p>
         )}
+        <button className="copy-btn">📋 Copy</button>
       </div>
     </div>
   );
