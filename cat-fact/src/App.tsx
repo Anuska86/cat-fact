@@ -16,6 +16,19 @@ function App() {
     }
   };
 
-  return <h1>Daily Cat Facts</h1>;
+  return (
+    <div className="app-div">
+      <h1>Daily Cat Facts</h1>
+
+      <div className="fact-card">
+        <button onClick={fetchFact}>Get a New Cat Fact</button>
+        {catData ? (
+          <p className="fact-text">{catData.fact}</p>
+        ) : (
+          <p>Click the button if you want to know something funny about cats</p>
+        )}
+      </div>
+    </div>
+  );
 }
 export default App;
