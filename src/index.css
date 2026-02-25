@@ -31,6 +31,7 @@ body {
   background-attachment: fixed;
   color: var(--text-main);
   font-family: "Inter", system-ui, sans-serif;
+  transition: background 0.3s ease;
 }
 
 #root {
