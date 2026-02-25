@@ -1,4 +1,5 @@
 import "./App.css";
+import toast from "react-hot-toast";
 
 import catLogo from "./assets/logo.png";
 
@@ -31,9 +32,20 @@ function App() {
     if (catData?.fact) {
       try {
         await navigator.clipboard.writeText(catData.fact);
-        alert("Fact copied to clipboard!");
+        toast.success("Fact copied to clipboard!", {
+          style: {
+            border: "2px solid var(--color-teal)",
+            padding: "16px",
+            color: "var(--text-main)",
+            background: "var(--color-cream)",
+          },
+          iconTheme: {
+            primary: "var(--color-teal)",
+            secondary: "#FFFAEE",
+          },
+        });
       } catch (error) {
-        console.error("Failed to copy the fact!:", error);
+        toast.error("Could not copy fact.");
       }
     }
   };
@@ -58,7 +70,9 @@ function App() {
               : "Click the button to get a cat fact!"}
           </p>
         )}
-        <button className="copy-btn">📋 Copy</button>
+        <button className="copy-btn" onClick={copyToClipboard}>
+          📋 Copy
+        </button>
       </div>
     </div>
   );
