@@ -24,6 +24,7 @@ A vibrant, type-safe React application that delivers random cat facts using the 
 - Language: [TypeScript](https://www.typescriptlang.org/) (for type safety and better DX)
 - Styling: Pure CSS3 with Custom Variables
 - Library: `react-hot-toast` for notifications
+- Testing: Vitest & React Testing Library
 
 🚀 Getting Started:
 
@@ -60,6 +61,20 @@ A vibrant, type-safe React application that delivers random cat facts using the 
 
 5.  View in browser:
     Open [http://localhost:5173](http://localhost:5173) to see the app.
+
+    🧪 Testing:
+
+The project uses Vitest and React Testing Library to ensure UI stability and reliable data fetching.
+
+- Unit Testing: Verifying component rendering and initial state.
+
+- Integration Testing: Simulating user interactions like button clicks.
+
+- API Mocking: Using Vitest vi.stubGlobal to mock network responses, ensuring the test suite remains fast and deterministic.
+
+To run the tests in your terminal:
+
+Bash: npm test
 
 🧠 Key Concepts Implemented:
 
