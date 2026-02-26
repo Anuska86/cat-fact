@@ -17,7 +17,7 @@ test("displays initial welcome message", () => {
 test("button is clickable and exits", () => {
   render(<App />);
   const button = screen.getByRole("button", { name: /get a new cat fact/i });
-  expect(button).toBeDefined;
+  expect(button).toBeDefined();
 
   //Simulate a click
   fireEvent.click(button);
@@ -30,11 +30,9 @@ test("mocks the API and displays a cat fact", async () => {
 
   vi.stubGlobal(
     "fetch",
-    vi
-      .fn()
-      .mockResolvedValue({
-        json: async () => ({ fact: mockFact }),
-      } as Response),
+    vi.fn().mockResolvedValue({
+      json: async () => ({ fact: mockFact }),
+    } as Response),
   );
 
   render(<App />);
