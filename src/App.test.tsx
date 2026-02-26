@@ -22,3 +22,30 @@ test("button is clickable and exits", () => {
   //Simulate a click
   fireEvent.click(button);
 });
+
+//Test 3: Mock the API and display a fact
+
+test("mocks the API and displays a cat fact", async () => {
+  const mockFact = "Cats have five toes on their front paws."; //fake fetch
+
+  vi.stubGlobal(
+    "fetch",
+    vi
+      .fn()
+      .mockResolvedValue({
+        json: async () => ({ fact: mockFact }),
+      } as Response),
+  );
+
+  render(<App />);
+
+  //click the button to fetch
+  const button = screen.getByRole("button", { name: /get a new cat fact/i });
+  fireEvent.click(button);
+
+  //check the fake fact
+  const displayedFact = await screen.findByText(mockFact);
+  expect(displayedFact).toBeDefined();
+
+  vi.unstubAllGlobals(); //cleanup the mock
+});
